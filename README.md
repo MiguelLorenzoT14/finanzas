@@ -1,4 +1,3 @@
-```markdown
 # 💰 Finanzas AI - Personal Finance Management / Gestión de Finanzas Personales
 
 ![Dashboard Finanzas](./images/captura%20dashboard%20finanzas.png)
@@ -117,4 +116,3 @@ Toma el control de tu dinero con información en tiempo real y asesoramiento per
 ---
 
 Built with ❤️ by [Miguel Lorenzo](https://github.com/MiguelLorenzoT14)
-```
