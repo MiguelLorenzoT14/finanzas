@@ -64,7 +64,7 @@ Toma el control de tu dinero con información en tiempo real y asesoramiento per
 - **Herramienta de Construcción**: [Vite](https://vitejs.dev/)
 - **Contenedor de Escritorio**: [Electron](https://www.electronjs.org/)
 - **Servicio Backend**: [Supabase](https://supabase.com/) (PostgreSQL + Auth)
-- **Integración IA**: [Groq SDK](https://groq.com/) & [Google Generative AI](https://ai.google.dev/)
+- **Integración IA**: [Groq SDK](https://groq.com/)
 - **Visualización de Datos**: [Recharts](https://recharts.org/)
 - **Iconos**: [Lucide React](https://lucide.dev/)
 - **Estilos**: Vanilla CSS con propiedades personalizadas modernas.
@@ -98,7 +98,6 @@ Toma el control de tu dinero con información en tiempo real y asesoramiento per
    VITE_SUPABASE_URL=your_supabase_url
    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
    VITE_GROQ_API_KEY=your_groq_api_key
-   VITE_GEMINI_API_KEY=your_gemini_api_key
    ```
 
 4. **Run in development mode / Ejecutar en modo desarrollo**
