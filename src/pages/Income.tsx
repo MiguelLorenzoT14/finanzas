@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useFinance } from '../context/FinanceContext';
 import { useNotification } from '../context/NotificationContext';
 import Skeleton from '../components/Skeleton';
-import { Plus, Trash2, Calendar, DollarSign, Tag, FileText, RefreshCw, Loader } from 'lucide-react';
+import { Plus, Trash2, Calendar, Coins, Tag, FileText, RefreshCw, Loader } from 'lucide-react';
 import './Income.css';
 
 const Income = () => {
@@ -109,7 +109,7 @@ const Income = () => {
                     <div className="form-grid">
                         <div className="form-group">
                             <label className="form-label">
-                                <DollarSign size={16} /> Monto
+                                <Coins size={16} /> Monto
                             </label>
                             <input
                                 type="number"

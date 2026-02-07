@@ -14,6 +14,7 @@ function createWindow() {
         minHeight: 750,
         autoHideMenuBar: true,
         titleBarStyle: 'hidden',
+        icon: path.join(__dirname, '../assets/icon.png'),
         titleBarOverlay: {
             color: '#1a1a24',
             symbolColor: '#e0e0e0',
@@ -45,7 +46,7 @@ function createWindow() {
 
     if (process.env.NODE_ENV === 'development') {
         mainWindow.loadURL('http://localhost:5173');
-        mainWindow.webContents.openDevTools();
+        // mainWindow.webContents.openDevTools();
     } else {
         mainWindow.loadFile(path.join(__dirname, '../dist/index.html'));
     }
