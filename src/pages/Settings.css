@@ -1,0 +1,204 @@
+/* ============================================
+   SETTINGS PAGE STYLES
+   ============================================ */
+.settings-container {
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.header-mb h1 {
+    margin: 0 0 var(--spacing-xs) 0;
+    font-size: 1.75rem;
+}
+
+.header-mb .subtitle {
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* Profile Card */
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+    background-color: var(--color-bg-surface);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    border: 1px solid var(--color-bg-surface-elevated);
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #a855f7, #3b82f6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+}
+
+.profile-info h2 {
+    margin: 0 0 var(--spacing-xs) 0;
+}
+
+.profile-email {
+    color: var(--color-text-muted);
+    margin: 0 0 var(--spacing-sm) 0;
+}
+
+.profile-badges {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.role-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-full);
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: rgba(0, 122, 204, 0.15);
+    color: var(--color-primary);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-full);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.status-badge.active {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: var(--color-success);
+}
+
+/* Settings Grid */
+.settings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.settings-card {
+    background-color: var(--color-bg-surface);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    border: 1px solid var(--color-bg-surface-elevated);
+}
+
+.settings-card h3 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin: 0 0 var(--spacing-sm) 0;
+    font-size: 1rem;
+}
+
+.icon-blue {
+    color: #3b82f6;
+}
+
+.icon-green {
+    color: #22c55e;
+}
+
+.icon-primary {
+    color: var(--color-primary);
+}
+
+.card-description {
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    margin: 0 0 var(--spacing-lg) 0;
+}
+
+/* Settings Buttons */
+.settings-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.settings-btn.outline {
+    background: transparent;
+    border: 1px solid var(--color-bg-surface-elevated);
+    color: var(--color-text-base);
+}
+
+.settings-btn.outline:hover {
+    background-color: var(--color-bg-surface-elevated);
+    border-color: var(--color-primary);
+}
+
+.settings-btn.primary {
+    background: var(--color-primary);
+    border: none;
+    color: white;
+}
+
+.settings-btn.primary:hover {
+    background: var(--color-primary-dark);
+}
+
+/* Logout Section */
+.logout-section {
+    background-color: var(--color-bg-surface);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    border: 1px solid var(--color-bg-surface-elevated);
+    margin-top: auto;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background: transparent;
+    border: none;
+    color: #ef4444;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.logout-btn:hover {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #dc2626;
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+@media (max-width: 768px) {
+    .settings-container {
+        padding: var(--spacing-lg);
+    }
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-badges {
+        justify-content: center;
+    }
+}

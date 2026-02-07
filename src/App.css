@@ -1,0 +1,23 @@
+/* Global reset and app-specific styles */
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.section-header {
+    margin-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--color-bg-surface-elevated);
+    padding-bottom: var(--spacing-sm);
+}

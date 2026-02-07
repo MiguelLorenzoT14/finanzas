@@ -1,0 +1,350 @@
+/* ============================================
+   SAVINGS PAGE STYLES
+   ============================================ */
+.savings-container {
+    padding: var(--spacing-xl);
+}
+
+.header-mb {
+    margin-bottom: var(--spacing-xl);
+}
+
+.header-mb h1 {
+    margin: 0 0 var(--spacing-xs) 0;
+    font-size: 1.75rem;
+}
+
+.header-mb .subtitle {
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* Loading State */
+.savings-container .loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    min-height: 300px;
+    color: var(--color-text-muted);
+}
+
+/* Summary Grid */
+.savings-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Large Savings Card */
+.savings-card-large {
+    background: linear-gradient(135deg, var(--color-bg-surface), #1a2940);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    border: 1px solid var(--color-bg-surface-elevated);
+}
+
+.savings-card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-weight: 500;
+}
+
+.savings-amount-large {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-text-highlight);
+    margin-bottom: var(--spacing-xs);
+}
+
+.savings-subtitle {
+    color: var(--color-text-muted);
+    margin: 0 0 var(--spacing-lg) 0;
+    font-size: 0.875rem;
+}
+
+/* Stats */
+.savings-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--color-bg-surface-elevated);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.stat-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-base);
+}
+
+.stat-value.editable {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.stat-value.editable:hover {
+    color: var(--color-primary);
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Edit Goal Inline */
+.edit-goal-inline {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
+.goal-input {
+    width: 120px;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-bg-base);
+    color: var(--color-text-base);
+    border-radius: var(--border-radius-sm);
+    font-size: 1rem;
+}
+
+.save-goal-btn {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+}
+
+.save-goal-btn:hover {
+    background: var(--color-primary-dark);
+}
+
+/* Calculator Card */
+.calculator-card {
+    background-color: var(--color-bg-surface);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    border: 1px solid var(--color-bg-surface-elevated);
+}
+
+.calculator-card h3 {
+    margin: 0 0 var(--spacing-xs) 0;
+}
+
+.calculator-subtitle {
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    margin: 0 0 var(--spacing-lg) 0;
+}
+
+/* Rate Slider */
+.rate-slider-section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.rate-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-sm);
+}
+
+.rate-value {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.range-slider {
+    width: 100%;
+    height: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--color-bg-base);
+    border-radius: 4px;
+    outline: none;
+}
+
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.rate-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-top: var(--spacing-xs);
+}
+
+/* Recommendation Box */
+.recommendation-box {
+    padding: var(--spacing-md);
+    background-color: var(--color-bg-base);
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--color-bg-surface-elevated);
+}
+
+.recommendation-box h4 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin: 0 0 var(--spacing-sm) 0;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.recommendation-box p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.status-good {
+    color: var(--color-success);
+}
+
+.status-warning {
+    color: var(--color-warning);
+}
+
+/* Projection Chart */
+.projection-chart {
+    background-color: var(--color-bg-surface);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    border: 1px solid var(--color-bg-surface-elevated);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Tips Section */
+.tips-section {
+    margin-top: var(--spacing-xl);
+}
+
+.tips-card {
+    background-color: var(--color-bg-surface);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    border: 1px solid var(--color-bg-surface-elevated);
+}
+
+.tips-card h3 {
+    margin: 0 0 var(--spacing-lg) 0;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: 1.25rem;
+}
+
+.tips-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.tips-list li {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    padding-left: var(--spacing-md);
+    border-left: 3px solid var(--color-primary);
+}
+
+.tips-list li strong {
+    color: var(--color-text-base);
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-size: 1rem;
+}
+
+.projection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.projection-header h3 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin: 0;
+}
+
+.months-select {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--color-bg-surface-elevated);
+    background-color: var(--color-bg-base);
+    color: var(--color-text-base);
+    border-radius: var(--border-radius-md);
+    font-size: 0.875rem;
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+@media (max-width: 768px) {
+    .savings-container {
+        padding: var(--spacing-lg);
+    }
+
+    .savings-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .savings-amount-large {
+        font-size: 2rem;
+    }
+
+    .savings-card-large,
+    .calculator-card,
+    .projection-chart {
+        padding: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .savings-container {
+        padding: var(--spacing-md);
+    }
+
+    .savings-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .projection-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-md);
+    }
+}

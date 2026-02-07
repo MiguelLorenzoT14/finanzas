@@ -1,0 +1,53 @@
+{
+  "name": "finanzas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "concurrently -k \"vite\" \"npm run electron:dev\"",
+    "electron:dev": "wait-on tcp:5173 && tsc -p tsconfig.electron.json && cross-env NODE_ENV=development electron .",
+    "build": "tsc -p tsconfig.electron.json && vite build && electron-builder",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@supabase/supabase-js": "^2.95.3",
+    "electron-squirrel-startup": "^1.0.1",
+    "groq-sdk": "^0.37.0",
+    "lucide-react": "^0.563.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.13.0",
+    "recharts": "^3.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^30.0.8",
+    "electron-builder": "^24.13.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.11",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.finanzas.app",
+    "productName": "Finanzas",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
