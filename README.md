@@ -1,4 +1,3 @@
-```markdown
 # 💰 Finanzas AI - Personal Finance Management / Gestión de Finanzas Personales
 
 ![Dashboard Finanzas](./images/captura%20dashboard%20finanzas.png)
@@ -20,7 +19,7 @@ Take control of your money with real-time insights and personalized AI-driven ad
 
 - **📊 Dynamic Dashboard**: Get a bird's-eye view of your finances with beautiful, interactive charts powered by Recharts.
 - **💸 Expense & Income Tracking**: Register every transaction with ease. Categorize your spending to understand where your money goes.
-- **🤖 AI Financial Assistant**: Chat with an intelligent bot powered by **Groq** and **Gemini** to get advice, summaries of your spending, and financial tips.
+- **🤖 AI Financial Assistant**: Chat with an intelligent bot powered by **Groq** to get advice, summaries of your spending, and financial tips.
 - **📅 Budgeting**: Set monthly budgets for different categories and track your progress in real-time.
 - **🏦 Savings Goals**: Plan for the future by setting and monitoring savings objectives.
 - **🔒 Secure Authentication**: Integrated with **Supabase Auth** to keep your financial data private and secure.
@@ -33,7 +32,7 @@ Take control of your money with real-time insights and personalized AI-driven ad
 - **Build Tool**: [Vite](https://vitejs.dev/)
 - **Desktop Wrapper**: [Electron](https://www.electronjs.org/)
 - **Backend Service**: [Supabase](https://supabase.com/) (PostgreSQL + Auth)
-- **AI Integration**: [Groq SDK](https://groq.com/) & [Google Generative AI](https://ai.google.dev/)
+- **AI Integration**: [Groq SDK](https://groq.com/)
 - **Data Visualization**: [Recharts](https://recharts.org/)
 - **Icons**: [Lucide React](https://lucide.dev/)
 - **Styling**: Vanilla CSS with modern custom properties.
@@ -52,7 +51,7 @@ Toma el control de tu dinero con información en tiempo real y asesoramiento per
 
 - **📊 Dashboard Dinámico**: Obtén una vista panorámica de tus finanzas con gráficos hermosos e interactivos impulsados por Recharts.
 - **💸 Seguimiento de Gastos e Ingresos**: Registra cada transacción con facilidad. Categoriza tus gastos para entender a dónde va tu dinero.
-- **🤖 Asistente Financiero IA**: Chatea con un bot inteligente impulsado por **Groq** y **Gemini** para obtener consejos, resúmenes de tus gastos y tips financieros.
+- **🤖 Asistente Financiero IA**: Chatea con un bot inteligente impulsado por **Groq** para obtener consejos, resúmenes de tus gastos y tips financieros.
 - **📅 Presupuestos**: Establece presupuestos mensuales para diferentes categorías y sigue tu progreso en tiempo real.
 - **🏦 Metas de Ahorro**: Planifica el futuro estableciendo y monitoreando objetivos de ahorro.
 - **🔒 Autenticación Segura**: Integrado con **Supabase Auth** para mantener tus datos financieros privados y seguros.
@@ -65,7 +64,7 @@ Toma el control de tu dinero con información en tiempo real y asesoramiento per
 - **Herramienta de Construcción**: [Vite](https://vitejs.dev/)
 - **Contenedor de Escritorio**: [Electron](https://www.electronjs.org/)
 - **Servicio Backend**: [Supabase](https://supabase.com/) (PostgreSQL + Auth)
-- **Integración IA**: [Groq SDK](https://groq.com/) & [Google Generative AI](https://ai.google.dev/)
+- **Integración IA**: [Groq SDK](https://groq.com/)
 - **Visualización de Datos**: [Recharts](https://recharts.org/)
 - **Iconos**: [Lucide React](https://lucide.dev/)
 - **Estilos**: Vanilla CSS con propiedades personalizadas modernas.
@@ -78,7 +77,7 @@ Toma el control de tu dinero con información en tiempo real y asesoramiento per
 
 - Node.js (Latest LTS recommended / Recomendado última LTS)
 - A Supabase project / Un proyecto de Supabase
-- API Keys for Groq and/or Google Gemini / Claves API para Groq y/o Google Gemini
+- API Keys for Groq / Claves API para Groq
 
 ### Installation / Instalación
 
@@ -99,7 +98,6 @@ Toma el control de tu dinero con información en tiempo real y asesoramiento per
    VITE_SUPABASE_URL=your_supabase_url
    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
    VITE_GROQ_API_KEY=your_groq_api_key
-   VITE_GEMINI_API_KEY=your_gemini_api_key
    ```
 
 4. **Run in development mode / Ejecutar en modo desarrollo**
@@ -117,4 +115,3 @@ Toma el control de tu dinero con información en tiempo real y asesoramiento per
 ---
 
 Built with ❤️ by [Miguel Lorenzo](https://github.com/MiguelLorenzoT14)
-```

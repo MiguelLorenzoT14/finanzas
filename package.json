@@ -13,7 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@google/generative-ai": "^0.24.1",
     "@supabase/supabase-js": "^2.95.3",
     "electron-squirrel-startup": "^1.0.1",
     "groq-sdk": "^0.37.0",
